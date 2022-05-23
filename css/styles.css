@@ -3,6 +3,15 @@
   margin: 0;
   padding: 0;
   font-family: Helvetica, sans-serif;
+  line-height: 1.2;
+}
+
+.break1 {
+  height: 200px;
+}
+
+.break2 {
+  height: 50px;
 }
 
 table {
@@ -22,12 +31,15 @@ header {
   background-color: black;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 footer {
   display: flex;
   align-items: center;
   background: black;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .codename-div {
@@ -47,9 +59,7 @@ footer {
 }
 
 button, .playbtn {
-  max-width: fit-content;
-  max-height: fit-content;
-  margin: 30px;
+  margin: 2%;
   padding: 15px;
   font-size: 20px;
   font-weight: 600;
@@ -214,11 +224,19 @@ a, button {
   max-width: fit-content;
 }
 
-.video-trailer {
-  display: block;
-  margin: auto;
-  width: 1280px;
-  height: 720px;
+.videoWrap {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  width: 100%;
+}
+.videoWrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .slide-content {
@@ -243,6 +261,7 @@ img {
 .audio-button-div {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .filler, .filler2 {
@@ -252,6 +271,7 @@ img {
 
 .filler {
   position: absolute;
+  max-width: 20%;
 
 }
 
@@ -279,7 +299,7 @@ img {
   font-style: italic;
   border: 3px solid black;
   font-size: 20px;
-  margin: 20px 15px;
+  margin: 20px 1%;
   vertical-align: top;
 }
 
@@ -302,5 +322,120 @@ img {
           font-size: 12px;}  
   .header-title-div {
           font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  header {
+          width: 100%;
+          height: fit-content;}
+  .under {
+          font-size: 8px;}  
+  .header-title-div {
+          font-size: 15px;
+  }
+  .dropdown-hover {
+    font-size: 10px;
+  }
+  .playbtn {
+    font-size: 15px;
+  }
+  .column {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  header {
+          width: 100%;
+          height: fit-content;}
+  .under {
+          font-size: 8px;}  
+  .header-title-div {
+          font-size: 15px;
+  }
+  .dropdown-hover {
+    font-size: 10px;
+  }
+  .playbtn {
+    font-size: 15px;
+  }
+  .column {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 1125px) {
+ .index-title-div {
+   font-size: 30px;
+   margin-left: 12%;
+ }
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+          width: 100%;
+          height: fit-content;}
+  .under {
+          font-size: 4px;}  
+  .header-title-div {
+          font-size: 10px;
+  }
+  .dropdown-hover {
+    font-size: 10px;
+  }
+  .column {
+    font-size: 15px;
+  }
+}
+
+/*At this point, it's probably better to turn the navigation menus into a hamburger menu*/
+/*Hamburger implementation using display: none?*/
+
+@media only screen and (max-width: 960px) {
+  .playbtn {
+
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .index-title-div {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .under {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+          width: 100%;
+          height: fit-content;}
+  .under {
+          font-size: 4px;}  
+  .header-title-div {
+          font-size: 10px;
+  }
+  .dropdown-hover {
+    font-size: 10px;
+    display: block;
+  }
+  .index-title-div {
+    font-size: 20px;
+  }
+  .column {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footercontent {
+    display: none;
+  }
+  .fillercontent2 {
+    
   }
 }
