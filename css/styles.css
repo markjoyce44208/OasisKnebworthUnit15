@@ -443,8 +443,8 @@ img {
     background-color: black;
     padding-bottom: 10px;
     display: none;
-    max-height: 400px;
     overflow: scroll;
+    min-height: 80vh;
   }
   
   .links.open{
@@ -518,5 +518,20 @@ img {
     vertical-align: top;
     min-height: 250px;
     max-height: 250px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .column {
+    float: right;
+    width: 35%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    border: 3px solid black;
+    font-size: 16px;
+    margin: 20px;
+    vertical-align: top;
+    min-height: 350px;
   }
 }
