@@ -419,10 +419,7 @@ img {
   .header-title-div {
           font-size: 10px;
   }
-  .dropdown-hover {
-    font-size: 10px;
-    display: block;
-  }
+  
   .index-title-div {
     font-size: 20px;
   }
@@ -458,6 +455,9 @@ img {
     margin-right: 10px;
     margin-bottom: 0px;
     margin: auto, 10px, 0px, 10px;
+    font-size: 15px;
+    display: block;
+    text-align: center;
   }
 
   .dropdown-content {
