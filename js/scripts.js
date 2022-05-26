@@ -42,3 +42,15 @@ function togglePlay5() {
     var audio = document.getElementById("audio5");
     return audio.paused ? audio.play() : audio.pause();
     }
+
+$(document).ready(function(){
+    $(".responsiveIcon").on("click", function(){
+        $(".links").toggleClass("open");
+    });
+});
+
+$(document).ready(function(){
+    $(".dropdown").on("click", function(){
+        $(".dropdown-content", this).toggleClass("open2");
+    });
+});
