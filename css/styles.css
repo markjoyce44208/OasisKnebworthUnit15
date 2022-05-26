@@ -431,6 +431,10 @@ img {
     font-size: 10px;
   }
 
+  .codename-div {
+    float: left;
+  }
+
   .links {
     display: flex;
     flex-direction: column;
@@ -493,10 +497,26 @@ img {
   .codename-div {
     margin: auto;
   }
-}
-
-@media only screen and (max-width: 700px) {
   .filler {
-    font-size: 5px;
+    font-size: 10px;
+    float: right;
+    min-width: 65%;
+  }
+  .codename-div {
+    transform: translate(140px);
+    font-weight: 900;
+  }
+  .column {
+    float: right;
+    width: 40%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    border: 3px solid black;
+    font-size: 16px;
+    margin: 20px;
+    vertical-align: top;
+    min-height: 250px;
+    max-height: 250px;
   }
 }
