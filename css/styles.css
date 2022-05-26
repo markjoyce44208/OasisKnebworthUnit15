@@ -442,7 +442,7 @@ img {
     display: none;
     overflow: scroll;
     min-height: 90vh;
-    margin-bottom: 10px
+    padding-bottom: 10px
   }
   
   .links.open{
