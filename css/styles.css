@@ -440,6 +440,8 @@ img {
     padding-bottom: 10px;
     display: none;
     max-height: 400px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
   
   .links.open{
