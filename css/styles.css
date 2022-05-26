@@ -18,6 +18,8 @@ table {
   margin: auto;
 }
 
+
+
 td, th {
   border: 1px solid black;
   text-align: center;
@@ -126,6 +128,7 @@ a, button {
 
 .dropdown:hover .dropdown-hover {
   background-color: #A9A9A9;
+  cursor: pointer;
 }
 
 .screenshot-title {
