@@ -439,10 +439,13 @@ img {
     background-color: black;
     padding-bottom: 10px;
     display: none;
+    max-height: 400px;
   }
   
   .links.open{
     display: flex;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .dropdown-hover {
@@ -458,6 +461,9 @@ img {
     font-size: 12px;
     height: calc(100% - 20px);
     margin-bottom: 0px;
+    max-width: 120px;
+    margin: auto;
+    margin-top: 10px;
   }
 
   .responsiveIcon {
