@@ -439,15 +439,13 @@ img {
     background-color: black;
     padding-bottom: 10px;
     display: none;
-    max-height: 400px;
+    max-height: 200%;
     overflow: scroll;
-    -webkit-overflow-scrolling: touch;
   }
   
   .links.open{
     display: flex;
     overflow: scroll;
-    -webkit-overflow-scrolling: touch;
   }
 
   .dropdown-hover {
