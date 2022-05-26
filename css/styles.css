@@ -477,7 +477,7 @@ img {
 }
 
 
-@media all and (max-width: 900px) and (orientation : portrait)  {
+@media all and (orientation : portrait)  {
   .links {
     max-height: 200px;
   }
