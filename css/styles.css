@@ -439,7 +439,7 @@ img {
     background-color: black;
     padding-bottom: 10px;
     display: none;
-    max-height: 200%;
+    max-height: 400px;
     overflow: scroll;
   }
   
