@@ -246,6 +246,10 @@ a, button {
   display: none;
 }
 
+.hamline1, .hamline2, .hamline3 {
+  display: none;
+}
+
 .slide-content {
   display: none;
 }
@@ -274,6 +278,7 @@ img {
 .filler, .filler2 {
   color: white;
   font-size: 8px;
+  padding: 10px;
 }
 
 .filler {
@@ -396,6 +401,9 @@ img {
   .column {
     font-size: 15px;
   }
+  .film-stage-review-div, .spectrum-review-div, .nme-review-div {
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -418,20 +426,16 @@ img {
           font-size: 4px;}  
   .header-title-div {
           font-size: 10px;
-  }
-  
+  } 
   .index-title-div {
     font-size: 20px;
   }
-
   .column {
     font-size: 10px;
   }
-
   .codename-div {
     float: left;
   }
-
   .links {
     display: flex;
     flex-direction: column;
@@ -443,13 +447,11 @@ img {
     overflow: scroll;
     height: calc(100vh - 106px);
     box-sizing: border-box;
-  }
-  
+  } 
   .links.open{
     display: flex;
     overflow: scroll;
   }
-
   .dropdown-hover {
     margin-left: 10px;
     margin-right: 10px;
@@ -459,7 +461,6 @@ img {
     display: block;
     text-align: center;
   }
-
   .dropdown-content {
     position: relative;
     display: none;
@@ -467,16 +468,34 @@ img {
     margin-bottom: 0px;
     max-width: 180px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 15px;
   }
-
   .responsiveIcon {
     display: block;
     padding: 10px;
     float: right;
+    max-height: 30px;
+    margin-bottom: 10px;
   }
   .responsiveIcon:hover {
     cursor: pointer;
+  }
+  .hamline1, .hamline2, .hamline3 {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background: white;
+    margin: 5px;
+    transition: 0.5s;
+  }
+  .change .hamline1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  .change .hamline2 {
+    opacity: 0;
+  }
+  .change .hamline3 {
+    transform: rotate(45deg) translate(-8px, -8px);
   }
 }
 
@@ -511,6 +530,19 @@ img {
     vertical-align: top;
     min-height: 250px;
     max-height: 250px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .index-title {
+    font-size: 20px;
+  }
+  .index-title-div {
+    position: relative;
+    margin: auto;
+  }
+  .break1 {
+    height: 150px;
   }
 }
 

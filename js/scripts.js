@@ -43,6 +43,10 @@ function togglePlay5() {
     return audio.paused ? audio.play() : audio.pause();
     }
 
+function hamanim(x) {
+    x.classList.toggle("change");
+}
+
 $(document).ready(function(){
     $(".responsiveIcon").on("click", function(){
         $(".links").toggleClass("open");
